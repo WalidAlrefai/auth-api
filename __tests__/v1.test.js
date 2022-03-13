@@ -11,7 +11,7 @@ beforeAll(async()=>{
     await db.sync();
 });
 afterAll(async()=>{
-    await db.sync();
+    await db.drop();
 });
 
 describe('Testing vi router',()=>{
