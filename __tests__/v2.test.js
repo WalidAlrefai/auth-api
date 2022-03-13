@@ -1,5 +1,5 @@
 'use strict';
-process.env.SECRET = 'walid'
+process.env.SECRET = 'walid' || process.env.SECRET;
 const supertest = require('supertest');
 const server  = require('../src/server').app;
 const { db } = require('../src/auth/models/index.js');

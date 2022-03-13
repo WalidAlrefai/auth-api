@@ -1,7 +1,7 @@
 'use strict';
 
-process.env.SECRET = "toes";
 
+process.env.SECRET = "walid" || process.env.SECRET;
 const supertest = require('supertest');
 const server = require('../src/server.js').app;
 const { db } = require('../src/auth/models/index.js');
